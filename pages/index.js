@@ -8,7 +8,7 @@ function HomePage({ characters }) {
       <Head>
         <title>Home Page</title>
       </Head>
-      <h1>Welcome to Next.js!</h1>
+      <h1>Welcome to Home Page!</h1>
 
       <ul>
       {characters.results.map(character => (
