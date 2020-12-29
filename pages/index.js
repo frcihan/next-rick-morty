@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Link from "next/link"
+import slug from "slug"
 
 function HomePage({ characters }) {
   return (
@@ -13,10 +14,10 @@ function HomePage({ characters }) {
       <ul>
       {characters.results.map(character => (
         <li key={character.id}>
-          <Link href="">
+          <Link href="/character/[slug]" as={`/character/${slug(character.name)}-${character.id}`}>
             <a>{character.name}</a>
           </Link>
-        </li>
+        </li> 
       ))}
       </ul>
 
