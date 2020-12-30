@@ -17,11 +17,10 @@ function CharacterDetail({ character }) {
 
       <style jsx>{`
         h1 {
-          color: white;
-          background-color: blue;
+          
         }
         body {
-          background: black;
+          
         }
       `}</style>
       <style global jsx>{``}</style>
