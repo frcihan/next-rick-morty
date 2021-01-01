@@ -9,19 +9,15 @@ function HomePage({ characters }) {
       <Head>
         <title>Home Page</title>
       </Head>
-      <h1>Welcome to Rick and Morty Website!</h1>
 
       <style jsx>{`
-        h1 {
-          text-align: center;
-          background: pink;
-        }
         
       `}</style>
       <style global jsx>{`
         body {
-          background: url("https://i.pinimg.com/originals/d4/0c/ea/d40cea0d3893378e7a96e441452dfcaf.jpg") no-repeat;
-          background-size: cover;
+          background: black url("https://wallpapercave.com/wp/wp1822727.jpg") no-repeat;
+          background-position: center 0%;
+          {/* background-size: cover; */}
         }
         
       `}</style>
