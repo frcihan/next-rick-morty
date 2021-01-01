@@ -6,9 +6,6 @@ function Navigation() {
       <Link href="/">
         <a>Home Page</a>
       </Link>
-      <Link href="/characters">
-        <a>Characters Page</a>
-      </Link>
       <Link href="/about">
         <a>About Page</a>
       </Link>
@@ -20,14 +17,13 @@ function Navigation() {
           background: black;
         }
         a {
-          color: red;
+          color: white;
           margin-left: 20px;
+          font-size: 1.5rem;
+          font-family: sans-serif;
+          text-decoration: none;
         }
       `}</style>
-      <style global jsx>{`
-        
-      `}</style>
-
     </nav>
   )
 }

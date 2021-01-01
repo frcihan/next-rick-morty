@@ -1,7 +1,6 @@
 import Navigation from './navigation'
 import Head from 'next/head'
 
-
 function Layout({ children }) {
   return (
     <div>
@@ -11,14 +10,7 @@ function Layout({ children }) {
       </Head>
       <Navigation />
       <main>{children}</main>
-      {/* <footer>design by frcihan</footer> */}
 
-
-      <style jsx>{`
-        body {
-        
-        }
-      `}</style>
       <style global jsx>{`
         * {
           margin: 0;
@@ -28,12 +20,7 @@ function Layout({ children }) {
           width: 80%;
           margin: auto;
         }
-        
       `}</style>
-
-
-
-
     </div>
   )
 }
