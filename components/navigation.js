@@ -1,16 +1,33 @@
 import Link from 'next/link'
 
-import styles from "./nav.module.css"
-
 function Navigation() {
   return (
     <nav>
       <Link href="/">
-        <a style={{color: 'pink'}}>Home Page</a>
+        <a>Home Page</a>
+      </Link>
+      <Link href="/characters">
+        <a>Characters Page</a>
       </Link>
       <Link href="/about">
-        <a className={styles.link}>About Page</a>
+        <a>About Page</a>
       </Link>
+
+      <style jsx>{`
+        nav {
+          margin: 0;
+          padding: 10px;
+          background: black;
+        }
+        a {
+          color: red;
+          margin-left: 20px;
+        }
+      `}</style>
+      <style global jsx>{`
+        
+      `}</style>
+
     </nav>
   )
 }

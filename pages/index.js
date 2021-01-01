@@ -9,44 +9,25 @@ function HomePage({ characters }) {
       <Head>
         <title>Home Page</title>
       </Head>
-      <h1>Welcome to Home Page!</h1>
-
-      <ul>
-      {characters.results.map(character => (
-        <li key={character.id}>
-          <Link href="/character/[slug]" as={`/character/${slug(character.name)}-${character.id}`}>
-            <a>{character.name}</a>
-          </Link>
-        </li> 
-      ))}
-      </ul>
+      <h1>Welcome to Rick and Morty Website!</h1>
 
       <style jsx>{`
         h1 {
-          
+          text-align: center;
+          background: pink;
         }
-        body {
-          
-        }
+        
       `}</style>
       <style global jsx>{`
+        body {
+          background: url("https://i.pinimg.com/originals/d4/0c/ea/d40cea0d3893378e7a96e441452dfcaf.jpg") no-repeat;
+          background-size: cover;
+        }
         
       `}</style>
 
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-
-  const data = await fetch ("https://rickandmortyapi.com/api/character")
-  const characters = await data.json()
-
-  return {
-    props: {
-      characters
-    }
-  }
 }
 
 export default HomePage
